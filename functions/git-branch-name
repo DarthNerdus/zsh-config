@@ -1,0 +1,2 @@
+branch=$(git branch 2>/dev/null | grep ^\*)
+[ x$branch != x ] && echo \(${branch/* /}\)

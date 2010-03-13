@@ -1,0 +1,2 @@
+local filename=$ZSH_CONFIG_ROOT/config/$1.sh
+[ -f $filename ] && source $filename

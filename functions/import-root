@@ -1,0 +1,4 @@
+if [ -d $1 ]; then
+  export PATH=$1/bin:$1/sbin:$PATH
+  export MANPATH=$1/man:$MANPATH
+fi

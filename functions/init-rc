@@ -1,0 +1,6 @@
+autoload load-config
+load-config options
+load-config history
+load-config keyboard
+load-config completion
+load-config prompt
