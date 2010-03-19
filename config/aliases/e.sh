@@ -1,2 +1,2 @@
-alias e=$EDITOR
+alias e=mate
 alias -g E="| e"
