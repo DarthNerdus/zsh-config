@@ -1,0 +1,1 @@
+alias sourceprofile="source ~/.zshenv"
