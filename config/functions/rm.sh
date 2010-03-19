@@ -1,19 +1,19 @@
 function rm() {
-  local path
-  for path in "$@"; do
+  local dir
+  for dir in "$@"; do
     # ignore any arguments
-    if [[ "$path" = -* ]]; then :
+    if [[ "$dir" = -* ]]; then :
     else
-		if [ -e $path ]
+		if [ -e $dir ]
 		then
-      	local dst=${path##*/}
+      	local dst=${dir##*/}
 	      # append the time if necessary
 	      while [ -e ~/.Trash/"$dst" ]; do
-	        dst="$dst "$(/bin/date +%H-%M-%S)
+	        dst="$dst "$(date +%H-%M-%S)
 	      done
-	      /bin/mv "$path" ~/.Trash/"$dst"
+	      mv "$dir" ~/.Trash/"$dst"
 		else
-			echo $path does not exist!
+			echo $dir does not exist!
 		fi
     fi
   done
