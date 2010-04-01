@@ -11,3 +11,5 @@ export EDITOR=vi
 for filename in $ZSH_CONFIG_ROOT/config/environments/*.sh; do
   source $filename
 done
+
+[ -f ~/.project-paths ] && . ~/.project-paths
