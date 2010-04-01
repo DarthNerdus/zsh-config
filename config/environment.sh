@@ -1,6 +1,6 @@
 autoload import-root
-import-root /usr/local
 import-root /opt/local
+import-root /usr/local
 import-root $HOME/local
 
 export LC_ALL=en_US.UTF-8
