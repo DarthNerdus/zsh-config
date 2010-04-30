@@ -6,7 +6,7 @@ function pull() {
 		then
 			echo "Pulling $dir"
 			cd /Users/jread/Developer/Open\ Source/$dir
-			git pull
+			git up
 		else
 			echo $dir does not exist.
 		fi
