@@ -2,3 +2,4 @@ autoload load-config
 load-config environment
 load-config aliases
 load-config functions
+load-config hashes
